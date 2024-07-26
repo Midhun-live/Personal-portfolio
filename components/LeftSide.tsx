@@ -34,7 +34,7 @@ const LeftSide = () => {
         </a>
       </div>
       <div>
-        <a href="mailto:midhunchakkaravarthy07@gmail.com?subject=Vanakkam, Let's get Connected">
+        <a href="https://leetcode.com/u/Midhun-Chakkaravarthy/">
           <span
             className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex 
           items-center justify-center hover:text-textGreen cursor-pointer

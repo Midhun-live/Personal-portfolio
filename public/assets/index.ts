@@ -1,3 +1,4 @@
-import logo from './images/logo.png';
+import logo from './images/logo.svg';
+import profile from './images/midhun.jpg'
 
-export {logo};
+export {logo,profile};

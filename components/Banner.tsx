@@ -31,8 +31,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I am developer and I build thinsgfor the web and i love tissya she is my
-        moon and that is why this saturn needs moon.
+        I am developer and I build things for the web.
         <br />
         <a href="/assets/CV.pdf" target="_black">
           <span
@@ -53,7 +52,9 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.9 }}
         className="w-52 h-14 text-sm font-titleFont border border-textGreen
       rounded-md text-textGreen tracking-wide hover:bg-bg-hoverColor duration-300"
-      ></motion.button>
+      >
+        Get in Touch
+      </motion.button>
     </section>
   );
 };

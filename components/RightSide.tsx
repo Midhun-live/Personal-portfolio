@@ -1,10 +1,16 @@
 import React from "react";
+interface props {
+  sendEmail: any;
+}
 
-const RightSide = () => {
+const RightSide = ({ sendEmail }: props) => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-end gap-10 text-textLight">
       <a href="mailto:midhunchakkaravarthy07@gmail.com?subject=Vanakkam, Let's get Connected">
-        <p className="text-sm rotate-90 w-72 tracking-wide text-textGreen">
+        <p
+          onClick={sendEmail}
+          className="text-sm rotate-90 w-72 tracking-wide text-textGreen"
+        >
           Connect.with.ME(mi)dhun
         </p>
       </a>

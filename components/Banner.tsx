@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
-const Banner = () => {
+interface props {
+  sendEmail: any;
+}
+
+const Banner = ({ sendEmail }: props) => {
   return (
     <section
       id="home"
@@ -21,9 +25,13 @@ const Banner = () => {
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
         Midhun Chakkaravarthy.{" "}
-        <span className="text-textDark mt-2 lgl:mt-4">
+        <motion.span
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-textDark mt-2 lgl:mt-4"
+        >
           Full Stack Developer
-        </span>
+        </motion.span>
       </motion.h1>
       <motion.p
         initial={{ y: 10, opacity: 0 }}
@@ -31,7 +39,12 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I am developer and I build things for the web.
+        As a full stack developer, tackling both backend challenges and
+        designing well-structured user interfaces brings great satisfaction.
+        <br />
+        When not coding, I’m a beginner flute player exploring the world of
+        music and eager to learn more instruments. My goal is to blend technical
+        expertise with creativity while enjoying a simple and fulfilling life.
         <br />
         <a href="/assets/CV.pdf" target="_black">
           <span
@@ -52,6 +65,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.9 }}
         className="w-52 h-14 text-sm font-titleFont border border-textGreen
       rounded-md text-textGreen tracking-wide hover:bg-bg-hoverColor duration-300"
+        onClick={sendEmail}
       >
         Get in Touch
       </motion.button>

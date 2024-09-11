@@ -16,16 +16,35 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  function sendEmail() {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "Taste",
+          text: "ty", // You can provide a URL if you want to share a link
+        })
+        .then(() => {
+          console.log("Successfully shared");
+        })
+        .catch((error) => {
+          console.error("Error sharing:", error);
+        });
+    } else {
+      console.log("Web Share API not supported in this browser.");
+      // Fallback: You can provide an alternative method here, like mailto link
+    }
+  }
   return (
     <>
       <Head>
+        <link rel="icon" href="favicon.svg" />
         <title>Midhun Chakkaravarthy</title>
       </Head>
       <main
         className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden 
       overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60"
       >
-        <Navbar />
+        <Navbar sendEmail={sendEmail} />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <motion.div
             initial={{ opacity: 0 }}
@@ -36,12 +55,12 @@ export default function Home() {
             <LeftSide />
           </motion.div>
           <div className="h-[88vh] w-full mx-auto p-4">
-            <Banner />
+            <Banner sendEmail={sendEmail} />
             <About />
             <Experience />
             <Projects />
             <Archives />
-            <Contact />
+            <Contact sendEmail={sendEmail} />
             <Footer />
           </div>
           <motion.div
@@ -50,7 +69,7 @@ export default function Home() {
             transition={{ delay: 1.5 }}
             className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0"
           >
-            <RightSide />
+            <RightSide sendEmail={sendEmail} />
           </motion.div>
         </div>
       </main>

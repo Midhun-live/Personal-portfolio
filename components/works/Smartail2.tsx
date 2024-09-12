@@ -11,32 +11,32 @@ const Smartail2 = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         Product Engineer Intern{" "}
-        <span className="text-textGreen tracking-wide">@Sayvai Softwares</span>
+        <span className="text-textGreen tracking-wide">@Smartail Pvt Ltd.</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Jun 2024 - Present{" "}
+        Jun 2022 - Dec 2022{" "}
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Implemented an AI-powered image extraction mechanism, reducing image
+          processing and report generation time significantly.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Utilized advanced image processing techniques for accurate extraction
+          of questions from images, surpassing manual methods.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Developed various UI features and APIs for seamless integration and
+          streamlined data exchange, while also resolving bugs.
         </li>
       </ul>
     </motion.div>

@@ -6,7 +6,7 @@ const Archives = () => {
   const [show, setShow] = useState(true);
 
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
+    <div id="project" className="max-w-contentContainer mx-auto px-4 py-24">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">My Projects</h2>
         <p className="text-sm font-titleFont text-textGreen">take a look</p>
@@ -23,14 +23,14 @@ const Archives = () => {
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
-          title="Event Hub"
+          title="Supabase Demo"
           content="This is the best website that allows user to share post and comment
           on the post that is posted by the same or different user."
           techList={["React JS", "JQuery", "Firebase"]}
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
-          title="Event Hub"
+          title=""
           content="This is the best website that allows user to share post and comment
         on the post that is posted by the same or different user."
           techList={["React JS", "JQuery", "Firebase"]}

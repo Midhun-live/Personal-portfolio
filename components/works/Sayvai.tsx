@@ -10,7 +10,7 @@ const Sayvai = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Software Developer Consultant{" "}
+        Software Developer{" "}
         <span className="text-textGreen tracking-wide">@Sayvai Softwares</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
@@ -21,22 +21,29 @@ const Sayvai = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Developed a dashboard which is a full-fledged client interface for the
+          voice bot configuration using Next.js and tailwind css.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Worked with Supabase database and Developed the backend using FastAPI{" "}
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Utilized the ORM tool SQLAlchemy's Alembic for database migration and
+          to manage the database schema
+        </li>
+        <li className="text-base flex gap-2 text-textDark">
+          <span className="text-textGreen mt-1">
+            <TiArrowForward />
+          </span>
+          Integrated and Rendered a UI component of livekit with the dashboard
+          for clients to communicate with Voicebot model using livekit server
+          via WebRTC.
         </li>
       </ul>
     </motion.div>

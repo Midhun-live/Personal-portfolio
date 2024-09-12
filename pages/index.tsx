@@ -58,7 +58,7 @@ export default function Home() {
             <Banner sendEmail={sendEmail} />
             <About />
             <Experience />
-            <Projects />
+            {/* <Projects /> */}
             <Archives />
             <Contact sendEmail={sendEmail} />
             <Footer />

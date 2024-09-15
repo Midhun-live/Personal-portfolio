@@ -4,6 +4,10 @@ import Image from "next/image";
 import { profile } from "@/public/assets";
 
 const About = () => {
+  const languages=["C", "Java", "Python", "JavaScript", "TypeScript", "SQL"];
+  const frameworks=["Angular", "React", "Next.js", "Node.js", "Express", "Spring Boot", "Tailwind CSS"];
+  const databases=["PostgreSQL", "MySQL", "Supabase"];
+  const tools=["Git", "SQLAlchemy", "Alembic", "Docker", "Livekit", "Kafka"]
   return (
     <section
       id="about"
@@ -16,65 +20,51 @@ const About = () => {
         flex-col gap-4"
         >
           <p>
-            I am a passionate software developer with a strong background in
-            full-stack development and a keen eye for innovative design. My
-            expertise lies in creating dynamic and responsive web applications
-            using modern frameworks like React and FastAPI.
+            I am a skilled full-stack developer experienced in both frontend and backend technologies, 
+            focused on creating smooth and efficient web applications.
           </p>
           <p>
-            With a knack for problem-solving, I enjoy tackling challenging
-            projects and continuously learning new technologies. Beyond coding,
-            I am an avid learner, always seeking opportunities to expand my
-            skill set and contribute to exciting projects.{" "}
+            With a knack for problem-solving, I enjoy tackling challenging projects and continuously learning
+            new technologies. Beyond coding, I am an avid learner, always seeking opportunities to expand my skill set and contribute to exciting projects.
           </p>
           <p>
-            In my spare time, I love exploring the outdoors, engaging in tech
-            communities, and working on personal coding projects.
+            In my spare time, I love exploring the outdoors, playing chess, learning musical instruments, 
+            and working on personal coding projects.
           </p>
           <p>Here are few technologies am currently working</p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              JS
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              JAVA
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              REACT JS
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Angular
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Git
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Supabase
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Alembic
-            </li>
+          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6">
+            {languages.map((item, i) => (
+              <li key={i} className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                {item}
+              </li>
+            ))}
+            {frameworks.map((item, i) => (
+              <li key={i} className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                {item}
+              </li>
+            ))}
+            {databases.map((item, i) => (
+              <li key={i} className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                {item}
+              </li>
+            ))}
+            {tools.map((item, i) => (
+              <li key={i} className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="w-full lg:w-1/3 h-80 relative group">

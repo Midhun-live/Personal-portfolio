@@ -16,6 +16,9 @@ const Smartail1 = () => {
       <p className="text-sm mt-1 font-medium text-textDark">
         Dec 2023 - May 2024{" "}
       </p>
+      <h4 className="ont-medium text-sm mt-2 font-titleFont">
+        Tech Stack: Angular, Java Spring Boot, RESTful API, MongoDB, Docker, Kafka.
+      </h4>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

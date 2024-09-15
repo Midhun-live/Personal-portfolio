@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
@@ -12,7 +11,8 @@ import Projects from "@/components/Projects";
 import Archives from "@/components/Archives";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
+import { logo } from "@/public/assets";
+;
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="icon" href="favicon.svg" />
+        <link rel="icon" href={logo} />
         <title>Midhun Chakkaravarthy</title>
       </Head>
       <main
@@ -58,7 +58,7 @@ export default function Home() {
             <Banner sendEmail={sendEmail} />
             <About />
             <Experience />
-            <Projects />
+            {/* <Projects /> */}
             <Archives />
             <Contact sendEmail={sendEmail} />
             <Footer />

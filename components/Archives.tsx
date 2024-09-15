@@ -6,41 +6,38 @@ const Archives = () => {
   const [show, setShow] = useState(true);
 
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
+    <div id="project" className="max-w-contentContainer mx-auto px-4 py-24">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">My Projects</h2>
         <p className="text-sm font-titleFont text-textGreen">take a look</p>
       </div>
       <div
         className="grid grid-cols-1 md:grid-cols-2 
-      xl:grid-cols-3 gap-6 mt-10"
+      xl:grid-cols-2 gap-6 mt-10"
       >
         <ProjectCard
           title="Event Hub"
-          content="This is the best website that allows user to share post and comment
-            on the post that is posted by the same or different user."
+          content="Engineered an accessible platform that streamlined the discovery of diverse online events, culminating in a surge in user engagement and active participation across a spectrum of webinars, workshops, and events"
           techList={["React JS", "JQuery", "Firebase"]}
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
-          title="Event Hub"
-          content="This is the best website that allows user to share post and comment
-          on the post that is posted by the same or different user."
+          title="Alumni Portal"
+          content="Currently involved in an ongoing web project focused on developing an alumni portal, fostering connections between alumni and their respective colleges through community features and private communication channels."
           techList={["React JS", "JQuery", "Firebase"]}
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
-          title="Event Hub"
+          title="Supabase Demo"
           content="This is the best website that allows user to share post and comment
         on the post that is posted by the same or different user."
           techList={["React JS", "JQuery", "Firebase"]}
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
-          title="Event Hub"
-          content="This is the best website that allows user to share post and comment
-      on the post that is posted by the same or different user."
-          techList={["React JS", "JQuery", "Firebase"]}
+          title="Paris Olympic 2024 - India"
+          content="This is a static website which lists the medal winners in Paris Olympic - 2024 from India."
+          techList={["HTML, JS, Tailwind CSS"]}
           link="https://github.com/Midhun-live"
         />
         <ProjectCard

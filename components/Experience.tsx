@@ -31,7 +31,7 @@ const Experience = () => {
       id="experience"
       className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
     >
-      <SectionTitle title="Where I have Worked" titleNumber="02" />
+      <SectionTitle title="Experiences" titleNumber="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
           <li
@@ -54,7 +54,7 @@ const Experience = () => {
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm
               cursor-pointer duration-300 px-8 font-medium`}
           >
-            Smartail - 2022
+            Smartail - 2024
           </li>
           <li
             onClick={handleSmartail2}
@@ -65,7 +65,7 @@ const Experience = () => {
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm
               cursor-pointer duration-300 px-8 font-medium`}
           >
-            Smartail - 2024
+            Smartail - 2022
           </li>
         </ul>
         {sayvai && <Sayvai />}

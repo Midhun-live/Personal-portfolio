@@ -1,4 +1,4 @@
-import logo from './images/logo.svg';
+import logo from './images/favicon.svg';
 import profile from './images/midhun.jpg';
 import project_1 from './images/project-1.png'
 

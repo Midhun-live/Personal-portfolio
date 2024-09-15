@@ -10,33 +10,33 @@ const Smartail1 = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Software Developer Consultant{" "}
+        Product Engineer Intern{" "}
         <span className="text-textGreen tracking-wide">@Smartail Pvt Ltd.</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Jun 2024 - Present{" "}
+        Dec 2023 - May 2024{" "}
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Managed the admin login by completely restructuring the existing
+          components and building new ones.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Worked in Angular, Java Spring Boot, RESTful API,MongoDB, Kafka.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Sample to find out the cause of india in the world of honour ajith
-          kumar
+          Seamlessly managed a major production release with main features in
+          the admin login and fixed 30+ bugs in 6 months across 10+ UI
+          components.
         </li>
       </ul>
     </motion.div>

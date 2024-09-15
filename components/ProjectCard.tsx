@@ -29,7 +29,7 @@ const ProjectCard = ({ title, content, techList, link }: Props) => {
           <p className="text-sm mt-3">{content}</p>
         </div>
         <ul
-          className="text-xs mdl:text-sm text-textDark flex items-center gap-2
+          className="text-xs mdl:text-sm text-textDark group-hover:text-textGreen flex items-center gap-2
       justify-between flex wrap"
         >
           {techList.map((item, i) => (

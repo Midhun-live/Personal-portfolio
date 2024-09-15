@@ -28,6 +28,13 @@ const Archives = () => {
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
+          title="Chat App"
+          content="This is the best website that allows user to share post and comment
+    on the post that is posted by the same or different user."
+          techList={["React JS", "JQuery", "Firebase"]}
+          link="https://github.com/Midhun-live"
+        />
+        <ProjectCard
           title="Supabase Demo"
           content="This is the best website that allows user to share post and comment
         on the post that is posted by the same or different user."
@@ -35,24 +42,16 @@ const Archives = () => {
           link="https://github.com/Midhun-live"
         />
         <ProjectCard
+          title="Advice App"
+          content="This application uses the Advice Slip API and automatically generates a piece of advice each time the site is refreshed."
+          techList={["HTML", "CSS", "JS"]}
+          link="https://midhun-live.github.io/advice-app/"
+        />
+        <ProjectCard
           title="Paris Olympic 2024 - India"
-          content="This is a static website which lists the medal winners in Paris Olympic - 2024 from India."
-          techList={["HTML, JS, Tailwind CSS"]}
-          link="https://github.com/Midhun-live"
-        />
-        <ProjectCard
-          title="Event Hub"
-          content="This is the best website that allows user to share post and comment
-    on the post that is posted by the same or different user."
-          techList={["React JS", "JQuery", "Firebase"]}
-          link="https://github.com/Midhun-live"
-        />
-        <ProjectCard
-          title="Event Hub"
-          content="This is the best website that allows user to share post and comment
-            on the post that is posted by the same or different user."
-          techList={["React JS", "JQuery", "Firebase"]}
-          link="https://github.com/Midhun-live"
+          content="This is a static website which lists the medal winners in the Paris Olympic - 2024 from India."
+          techList={["HTML", "JS", "Tailwind CSS"]}
+          link="https://olympic2024.vercel.app/"
         />
         {!show && (
           <>

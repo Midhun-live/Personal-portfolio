@@ -46,7 +46,7 @@ const Navbar = ({ sendEmail }: props) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Image className="w-16" src={logo} alt="image" />
+          <Image className="w-24" src={logo} alt="image" />
         </motion.div>
         <div className="hidden mdl:inline-flex items-center gap-7 ">
           <ul className="flex text-[13px] gap-7">

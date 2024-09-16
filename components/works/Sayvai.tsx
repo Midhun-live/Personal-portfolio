@@ -17,7 +17,7 @@ const Sayvai = () => {
         Jun 2024 - Present{" "}
       </p>
       <h4 className="ont-medium text-sm mt-2 font-titleFont">
-        Tech Stack: Next.js, Supabase, FastAPI, Tailwind CSS, SQLAlchemy's Alembic, Livekit.
+        Tech Stack: Next.js, Supabase, FastAPI, Tailwind CSS, SQLAlchemy&apos;s Alembic, Livekit.
       </h4>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
@@ -37,7 +37,7 @@ const Sayvai = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Utilized the ORM tool SQLAlchemy's Alembic for database migration and
+          Utilized the ORM tool SQLAlchemy&apos;s Alembic for database migration and
           to manage the database schema
         </li>
         <li className="text-base flex gap-2 text-textDark">

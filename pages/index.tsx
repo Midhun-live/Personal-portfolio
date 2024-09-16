@@ -37,8 +37,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="icon" href={logo} />
-        <title>Midhun Chakkaravarthy</title>
+      <link rel="icon" href="/assets/images/logo-color.svg" />
+      <title>Midhun Chakkaravarthy</title>
       </Head>
       <main
         className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden 

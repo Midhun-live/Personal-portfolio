@@ -16,6 +16,9 @@ const Sayvai = () => {
       <p className="text-sm mt-1 font-medium text-textDark">
         Jun 2024 - Present{" "}
       </p>
+      <h4 className="ont-medium text-sm mt-2 font-titleFont">
+        Tech Stack: Next.js, Supabase, FastAPI, Tailwind CSS, SQLAlchemy's Alembic, Livekit.
+      </h4>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

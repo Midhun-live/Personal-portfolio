@@ -1,5 +1,7 @@
 import { FaRegFolder } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { FaYoutube } from 'react-icons/fa';
+
 
 interface Props {
   title: string;
@@ -17,7 +19,10 @@ const ProjectCard = ({ title, content, techList, link }: Props) => {
       >
         <div className="flex justify-between items-center">
           <FaRegFolder className="text-4xl text-textGreen" />
-          <RxOpenInNewWindow className="text-4xl hover:text-textGreen" />
+          <div className="flex">
+          { title!=="Alumni Portal"  && <RxOpenInNewWindow className="text-4xl hover:text-textGreen" />}
+          { title === "Event Hub" && <FaYoutube className="text-4xl hover:text-textGreen"/>}
+          </div>
         </div>
         <div>
           <h2

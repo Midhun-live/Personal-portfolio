@@ -19,7 +19,7 @@ const Archives = () => {
           title="Event Hub"
           content="Engineered an accessible platform that streamlined the discovery of diverse online events, culminating in a surge in user engagement and active participation across a spectrum of webinars, workshops, and events"
           techList={["React JS", "JQuery", "Firebase"]}
-          link="https://github.com/Midhun-live"
+          link="https://newnormal-hackathon.vercel.app/"
         />
         <ProjectCard
           title="Alumni Portal"
@@ -31,13 +31,13 @@ const Archives = () => {
           title="Chat App"
           content="This chat application is built using the MERN stack and provides functionalities such as one-to-one chat and broadcast (one-to-many) features."
           techList={["MongoDB", "Express", "ReactJS","Node.js", "Socket.io"]}
-          link="https://github.com/Midhun-live"
+          link="https://github.com/Midhun-live/chat-app"
         />
         <ProjectCard
           title="Supabase Demo"
           content="This website uses the Supabase client to connect to a database and display student details on the frontend, demonstrating the effective integration of Supabase with the user interface."
           techList={["React JS", "Supabase"]}
-          link="https://github.com/Midhun-live"
+          link="https://supabase-demo-s1u2.vercel.app/e"
         />
         <ProjectCard
           title="Advice App"

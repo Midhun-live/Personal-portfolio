@@ -13,7 +13,7 @@ interface props {
 }
 
 const Navbar = ({ sendEmail }: props) => {
-  const ref = useRef<string | any>("");
+  const divref = useRef<HTMLDivElement | null>(null);
   const [showMenu, setShowMenu] = useState(false);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -33,7 +33,7 @@ const Navbar = ({ sendEmail }: props) => {
   };
 
   const handleClick = (e: any) => {
-    if (e.target.contains(ref.current)) {
+    if (e.target.contains(divref.current)) {
       setShowMenu(false);
     }
   };
@@ -157,7 +157,7 @@ const Navbar = ({ sendEmail }: props) => {
         {showMenu && (
           <div
             onClick={handleClick}
-            ref={(node) => (ref.current = node)}
+            ref={divref}
             className="absolute mdl:hidden top-0 right-0 w-full h-screen
         bg-black bg-opacity-50 flex flex-col items-end"
           >

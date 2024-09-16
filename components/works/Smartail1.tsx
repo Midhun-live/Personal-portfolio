@@ -31,12 +31,6 @@ const Smartail1 = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Worked in Angular, Java Spring Boot, RESTful API,MongoDB, Kafka.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
           Seamlessly managed a major production release with main features in
           the admin login and fixed 30+ bugs in 6 months across 10+ UI
           components.

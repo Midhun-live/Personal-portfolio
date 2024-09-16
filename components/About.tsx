@@ -31,32 +31,43 @@ const About = () => {
             In my spare time, I love exploring the outdoors, playing chess, learning musical instruments, 
             and working on personal coding projects.
           </p>
-          <p>Here are few technologies am currently working</p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6">
-            {languages.map((item, i) => (
-              <li key={i} className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <AiFillThunderbolt />
-                </span>
-                {item}
-              </li>
-            ))}
-            {frameworks.map((item, i) => (
-              <li key={i} className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <AiFillThunderbolt />
-                </span>
-                {item}
-              </li>
-            ))}
-            {databases.map((item, i) => (
-              <li key={i} className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <AiFillThunderbolt />
-                </span>
-                {item}
-              </li>
-            ))}
+          <p>Here are a few technologies I’m currently working with and familiar with..</p>
+          <div className="flex gap-10 text-sm font-titleFont flex-wrap">
+            <div>
+            <h6 className="text-md text-textGreen font-titleFont font-semibold tracking-wide mb-2">Languages</h6>
+              {languages.map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="text-textGreen">
+                    <AiFillThunderbolt />
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </div>
+            <div>
+            <h6 className="text-md text-textGreen font-titleFont font-semibold tracking-wide mb-2">Frameworks</h6>
+              {frameworks.map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="text-textGreen">
+                    <AiFillThunderbolt />
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </div>
+            <div>
+            <h6 className="text-md text-textGreen font-titleFont font-semibold tracking-wide mb-2">Databases</h6>
+              {databases.map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="text-textGreen">
+                    <AiFillThunderbolt />
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </div>
+            <div>
+            <h6 className="text-md text-textGreen font-titleFont font-semibold tracking-wide mb-2">Tools</h6>
             {tools.map((item, i) => (
               <li key={i} className="flex items-center gap-2">
                 <span className="text-textGreen">
@@ -65,7 +76,8 @@ const About = () => {
                 {item}
               </li>
             ))}
-          </ul>
+            </div>
+          </div>
         </div>
         <div className="w-full lg:w-1/3 h-80 relative group">
           <div className="absolute w-full h-96 -left-6 -top-6 rounded-lg">

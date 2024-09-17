@@ -87,6 +87,6 @@ Netlify will automatically build and deploy your site.
 
 - **Email**: midhunchakkaravarthy07@gmail.com
 - **GitHub**: Midhun-live
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/midhun-chakkaravarthy/)
-- **Website**: https://midhun-live.netlify.app/
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/midhun-chakkaravarthy/)
+- **Website**: [Midhun-live](https://midhun-live.netlify.app/)
 

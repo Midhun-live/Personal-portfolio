@@ -20,8 +20,8 @@ export default function Home() {
     if (navigator.share) {
       navigator
         .share({
-          title: "Taste",
-          text: "ty", // You can provide a URL if you want to share a link
+          title: "Get in Touch with Me",
+          text: "I saw your portfolio and would love to discuss potential opportunities. Looking forward to connecting!",
         })
         .then(() => {
           console.log("Successfully shared");

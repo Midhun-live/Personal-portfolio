@@ -55,7 +55,7 @@ To run this project locally, follow these steps:
    ```bash
    npm run dev
 
-4. **Open your browser and navigate to:**
+5. **Open your browser and navigate to:**
 
    ```bash
    [npm run dev](http://localhost:3000)

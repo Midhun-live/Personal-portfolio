@@ -13,6 +13,12 @@ interface props {
 }
 
 const Navbar = ({ sendEmail }: props) => {
+  const email = "midhunchakkaravarthy07@gmail.com";
+  const subject = encodeURIComponent("Inquiry from your portfolio");
+  const body = encodeURIComponent("I saw your portfolio and would like to discuss potential opportunities. Looking forward to connecting!");
+
+  // Mailto link with subject and body
+  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
   const divref = useRef<HTMLDivElement | null>(null);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -356,7 +362,8 @@ const Navbar = ({ sendEmail }: props) => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, ease: "easeIn" }}
                 className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
-                onClick={sendEmail}
+                href={mailtoLink}
+                // onClick={sendEmail}
               >
                 <p>midhunchakkaravarthy07@gmail.com</p>
               </motion.a>

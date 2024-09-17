@@ -4,11 +4,17 @@ interface props {
 }
 
 const RightSide = ({ sendEmail }: props) => {
+  const email = "midhunchakkaravarthy07@gmail.com";
+  const subject = encodeURIComponent("Inquiry from your portfolio");
+  const body = encodeURIComponent("I saw your portfolio and would like to discuss potential opportunities. Looking forward to connecting!");
+
+  // Mailto link with subject and body
+  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
   return (
     <div className="w-full h-full flex flex-col items-center justify-end gap-10 text-textLight">
-      <a href="mailto:midhunchakkaravarthy07@gmail.com?subject=Vanakkam, Let's get Connected">
+      <a href={mailtoLink}>
         <p
-          onClick={sendEmail}
+          // onClick={sendEmail}
           className="text-sm rotate-90 w-72 tracking-wide text-textGreen"
         >
           Connect.with.ME(mi)dhun

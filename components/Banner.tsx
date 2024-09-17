@@ -4,6 +4,12 @@ interface props {
 }
 
 const Banner = ({ sendEmail }: props) => {
+  const email = "midhunchakkaravarthy07@gmail.com";
+  const subject = encodeURIComponent("Inquiry from your portfolio");
+  const body = encodeURIComponent("I saw your portfolio and would like to discuss potential opportunities. Looking forward to connecting!");
+
+  // Mailto link with subject and body
+  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
   return (
     <section
       id="home"
@@ -59,16 +65,16 @@ const Banner = ({ sendEmail }: props) => {
           </span>
         </a>
       </motion.p>
-      <motion.button
+      <a href={mailtoLink}><motion.button
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
         className="w-52 h-14 text-sm font-titleFont border border-textGreen
       rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
-        onClick={sendEmail}
+        // onClick={sendEmail}
       >
         Get in Touch
-      </motion.button>
+      </motion.button></a>
     </section>
   );
 };

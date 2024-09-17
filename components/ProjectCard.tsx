@@ -1,6 +1,7 @@
 import { FaRegFolder } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FaYoutube } from 'react-icons/fa';
+import { useRouter } from 'next/router'
 
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const ProjectCard = ({ title, content, techList, link }: Props) => {
+  const router=useRouter();
   return (
     <a href={link} target="_blank">
       <div
@@ -21,7 +23,7 @@ const ProjectCard = ({ title, content, techList, link }: Props) => {
           <FaRegFolder className="text-4xl text-textGreen" />
           <div className="flex">
           { title!=="Alumni Portal"  && <RxOpenInNewWindow className="text-4xl hover:text-textGreen" />}
-          { title === "Event Hub" && <FaYoutube className="text-4xl hover:text-textGreen"/>}
+          { title === "Event Hub" && <FaYoutube onClick={() => router.push('https://www.youtube.com/watch?v=SlnenbP5eCM')} className="text-4xl hover:text-textGreen"/>}
           </div>
         </div>
         <div>

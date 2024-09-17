@@ -27,8 +27,8 @@ const Archives = () => {
           content="Currently involved in an web project focused on developing an alumni portal, fostering
             connections between alumni and their respective colleges through community features and private communication
             channels."
-          techList={["React JS", "JQuery", "Firebase"]}
-          link="https://github.com/Midhun-live"
+          techList={["ReactJS", "Node.js", "TailwindCSS", "MongoDB"]}
+          link="https://github.com/Midhun-live/Alumni-Portal"
         />
         <ProjectCard
           title="Chat App"

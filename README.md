@@ -1,4 +1,4 @@
-# Personal Portfolio
+<img width="1440" alt="Screenshot 2024-09-17 at 2 14 52 PM" src="https://github.com/user-attachments/assets/5b4d1ea9-4e1b-4462-b812-8fd0fc8b708d"># Personal Portfolio
 
 Welcome to my personal portfolio project! This site showcases my skills, experiences, and projects, built with Next.js and deployed on Netlify. This portfolio is designed to provide a comprehensive view of my professional journey and achievements.
 
@@ -9,7 +9,9 @@ Welcome to my personal portfolio project! This site showcases my skills, experie
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
+
 - [Contact](#contact)
+- [Screenshot](#screenshot)
 
 ## Features
 
@@ -78,9 +80,13 @@ To run this project locally, follow these steps:
   - **Deploy the site**:
 Netlify will automatically build and deploy your site.
 
+## Screenshot
+![Uploading Screenshot 2024-09-17 at 2.14.52 PM.png…]()
+
 ## Contact
 
 - **Email**: midhunchakkaravarthy07@gmail.com
 - **GitHub**: yourusername
 - **LinkedIn**: Your LinkedIn Profile
 - **Website**: https://midhun-live.netlify.app/
+

@@ -44,14 +44,14 @@ To run this project locally, follow these steps:
 2. **Navigate to the project directory:**
 
    ```bash
-   git clone https://github.com/yourusername/personal-portfolio.git
+   cd personal-portfolio
 
-1. **Clone the repository:**
+3. **Install dependencies:**
 
    ```bash
-   git clone https://github.com/yourusername/personal-portfolio.git
+   npm install
 
-1. **Clone the repository:**
+4. **Run the development server:**
 
    ```bash
    git clone https://github.com/yourusername/personal-portfolio.git

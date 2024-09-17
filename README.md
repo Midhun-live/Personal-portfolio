@@ -73,9 +73,9 @@ To run this project locally, follow these steps:
 
 - Live Site: Your Portfolio
 - **If you wish to deploy your own version**:
-- **Push your project to a GitHub repository**.
-- **Connect your GitHub repository to Netlify**:
-- Go to Netlify, sign in, and click "New site from Git".
-- Follow the prompts to link your GitHub repository and configure build settings.
-- **Deploy the site**:
+  - **Push your project to a GitHub repository**.
+  - **Connect your GitHub repository to Netlify**:
+    - Go to Netlify, sign in, and click "New site from Git".
+    - Follow the prompts to link your GitHub repository and configure build settings.
+  - **Deploy the site**:
 Netlify will automatically build and deploy your site.

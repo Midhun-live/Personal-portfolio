@@ -62,3 +62,7 @@ To run this project locally, follow these steps:
    [npm run dev](http://localhost:3000)
 
 ##Usage
+
+-- **View Portfolio**: Visit the homepage to see an overview of my work and skills.
+-- **Explore Sections**: Navigate through the sections - About Me, Experiences, Projects, and Contact - to learn more about my professional background.
+-- **Contact Me**: Use the contact section to reach out directly via email.

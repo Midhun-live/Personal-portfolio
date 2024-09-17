@@ -130,7 +130,7 @@ const Navbar = ({ sendEmail }: props) => {
               </motion.li>
             </Link>
           </ul>
-          <a href="/assets/CV.pdf" target="_blank">
+          <a href="/assets/resume.pdf" target="_blank">
             <motion.button
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

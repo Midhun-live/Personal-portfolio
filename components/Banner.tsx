@@ -52,7 +52,7 @@ const Banner = ({ sendEmail }: props) => {
         music and eager to learn more instruments. My goal is to blend technical
         expertise with creativity while enjoying a simple and fulfilling life.
         <br />
-        <a href="/assets/CV.pdf" target="_black">
+        <a href="/assets/resume.pdf" target="_black">
           <span
             className="text-textGreen inline-flex relative cursor-pointer h-7
           overflow-x-hidden group"

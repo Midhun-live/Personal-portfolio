@@ -17,13 +17,16 @@ const Archives = () => {
       >
         <ProjectCard
           title="Event Hub"
-          content="Engineered an accessible platform that streamlined the discovery of diverse online events, culminating in a surge in user engagement and active participation across a spectrum of webinars, workshops, and events"
+          content="Created a platform that facilitates the discovery of online events, enhancing user engagement in
+            webinars and workshops."
           techList={["React JS", "JQuery", "Firebase"]}
           link="https://newnormal-hackathon.vercel.app/"
         />
         <ProjectCard
           title="Alumni Portal"
-          content="Currently involved in an ongoing web project focused on developing an alumni portal, fostering connections between alumni and their respective colleges through community features and private communication channels."
+          content="Currently involved in an web project focused on developing an alumni portal, fostering
+            connections between alumni and their respective colleges through community features and private communication
+            channels."
           techList={["React JS", "JQuery", "Firebase"]}
           link="https://github.com/Midhun-live"
         />

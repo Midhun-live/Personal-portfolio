@@ -81,7 +81,6 @@ To run this project locally, follow these steps:
 Netlify will automatically build and deploy your site.
 
 ## Screenshot
-![Uploading Screenshot 2024-09-17 at 2.14.52 PM.png…]()
 <img width="1440" alt="Screenshot 2024-09-17 at 2 14 52 PM" src="https://github.com/user-attachments/assets/5b4d1ea9-4e1b-4462-b812-8fd0fc8b708d">
 
 ## Contact

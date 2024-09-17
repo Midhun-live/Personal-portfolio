@@ -77,3 +77,10 @@ To run this project locally, follow these steps:
     - Follow the prompts to link your GitHub repository and configure build settings.
   - **Deploy the site**:
 Netlify will automatically build and deploy your site.
+
+## Contact
+
+- **Email**: midhunchakkaravarthy07@gmail.com
+- **GitHub**: yourusername
+- **LinkedIn**: Your LinkedIn Profile
+- **Website**: https://midhun-live.netlify.app/

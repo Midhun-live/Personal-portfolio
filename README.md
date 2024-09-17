@@ -54,4 +54,9 @@ To run this project locally, follow these steps:
 4. **Run the development server:**
 
    ```bash
-   git clone https://github.com/yourusername/personal-portfolio.git
+   npm run dev
+
+4. **Open your browser and navigate to:**
+
+   ```bash
+   [npm run dev](http://localhost:3000)

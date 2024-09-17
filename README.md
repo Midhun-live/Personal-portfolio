@@ -61,8 +61,21 @@ To run this project locally, follow these steps:
    ```bash
    [npm run dev](http://localhost:3000)
 
-##Usage
+## Usage
 
 - **View Portfolio**: Visit the homepage to see an overview of my work and skills.
 - **Explore Sections**: Navigate through the sections - About Me, Experiences, Projects, and Contact - to learn more about my professional background.
 - **Contact Me**: Use the contact section to reach out directly via email.
+
+## Deployment
+
+- This project is deployed on Netlify. To view the live version, visit:
+
+- Live Site: Your Portfolio
+- **If you wish to deploy your own version**:
+- **Push your project to a GitHub repository**.
+- **Connect your GitHub repository to Netlify**:
+- Go to Netlify, sign in, and click "New site from Git".
+- Follow the prompts to link your GitHub repository and configure build settings.
+- **Deploy the site**:
+Netlify will automatically build and deploy your site.

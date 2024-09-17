@@ -31,6 +31,10 @@ export default function Home() {
         });
     } else {
       console.log("Web Share API not supported in this browser.");
+      const email = "midhunchakkaravarthy07@gmail.com";
+      const subject = encodeURIComponent("Potential Opportunity");
+      const body = encodeURIComponent("I saw your portfolio and would love to discuss potential opportunities. Looking forward to connecting!");
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
       // Fallback: You can provide an alternative method here, like mailto link
     }
   }

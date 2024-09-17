@@ -4,6 +4,12 @@ interface props {
 }
 
 const Contact = ({ sendEmail }: props) => {
+  const email = "midhunchakkaravarthy07@gmail.com";
+  const subject = encodeURIComponent("Inquiry from your portfolio");
+  const body = encodeURIComponent("I saw your portfolio and would like to discuss potential opportunities. Looking forward to connecting!");
+
+  // Mailto link with subject and body
+  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
   return (
     <section
       id="contact"
@@ -22,11 +28,11 @@ const Contact = ({ sendEmail }: props) => {
         Be it a question or just wanting to say hello, feel free to reach out to me and 
         I will do my very best to get back to you!
       </p>
-      <a href="mailto:midhunchakkaravarthy07@gmail.com">
+      <a href={mailtoLink}>
         <button
           className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm
         text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300"
-          onClick={sendEmail}
+          // onClick={sendEmail}
         >
           Say Hello!
         </button>

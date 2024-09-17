@@ -9,8 +9,6 @@ Welcome to my personal portfolio project! This site showcases my skills, experie
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features

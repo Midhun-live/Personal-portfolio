@@ -24,30 +24,33 @@ const Sayvai = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Developed a dashboard which is a full-fledged client interface for the
-          voice bot configuration using Next.js and tailwind css.
+          Engineered a client-facing dashboard for voice bot configuration, focusing on STT, TTS, and
+          LLM settings. Designed and implemented the backend infrastructure, efficiently managing data, and integrated Livekit to
+          facilitate real-time communication with the Voicebot model via WebRTC.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Worked with Supabase database and Developed the backend using FastAPI{" "}
+          Engaged in building websites for clients with a primary focus on integrating advanced voice bot and chatbot
+          models. This enables seamless user interaction through voice and text, enhancing engagement and automating customer
+          support.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Utilized the ORM tool SQLAlchemy&apos;s Alembic for database migration and
-          to manage the database schema
+          Additionally, built a content management system (CMS) to allow the client to manage and update website
+          content easily, ensuring smooth control over the site’s functionality while maintaining a user-friendly design.
         </li>
-        <li className="text-base flex gap-2 text-textDark">
+        {/* <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
           Integrated and Rendered a UI component of livekit with the dashboard
           for clients to communicate with Voicebot model using livekit server
           via WebRTC.
-        </li>
+        </li> */}
       </ul>
     </motion.div>
   );

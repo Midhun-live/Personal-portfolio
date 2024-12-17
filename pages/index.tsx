@@ -13,6 +13,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import Preloader from "@/components/Preloader";
+import ChatWidget from "@/components/Chatwidget";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -88,6 +89,9 @@ export default function Home() {
               </motion.div>
             </div>
           </main>
+          {/* <div className="fixed bottom-8 right-8 w-82 z-[99]">
+            <ChatWidget />
+          </div> */}
         </>
       )}
     </>

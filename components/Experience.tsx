@@ -3,6 +3,7 @@ import SectionTitle from "./SectionTitle";
 import Sayvai from "./works/Sayvai";
 import Smartail1 from "./works/Smartail1";
 import Smartail2 from "./works/Smartail2";
+import ParticlesComponent from "./Particles";
 
 const Experience = () => {
   const [sayvai, setSayvai] = useState(true);

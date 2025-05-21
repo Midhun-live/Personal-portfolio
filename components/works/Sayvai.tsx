@@ -24,24 +24,26 @@ const Sayvai = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Engineered a client-facing dashboard for voice bot configuration, focusing on STT, TTS, and
-          LLM settings. Designed and implemented the backend infrastructure, efficiently managing data, and integrated Livekit to
-          facilitate real-time communication with the Voicebot model via WebRTC.
+          Developed a client-facing dashboard to configure 3 core functionalities:
+Speech-to-Text (STT), Text-to-Speech (TTS), and Large Language Model (LLM) settings. Incorporated
+Livekit for real-time communication via WebRTC, enabling low-latency audio streaming for seamless voice interactions.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Engaged in building websites for clients with a primary focus on integrating advanced voice bot and chatbot
-          models. This enables seamless user interaction through voice and text, enhancing engagement and automating customer
-          support.
+          Designed and deployed the dashboard which has
+features to create custom voice agents. Utilized Supabase, SQLAlchemy, and Alembic for efficient database
+management and schema migrations, enabling clients to manage and scale their voice agents effortlessly.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Additionally, built a content management system (CMS) to allow the client to manage and update website
-          content easily, ensuring smooth control over the site’s functionality while maintaining a user-friendly design.
+          Built a custom CMS platform from scratch using React.js and FastAPI, enabling
+users to create and manage websites. Integrated the proprietary Voicebot and Chatbot models into the CMS, enabling
+clients to embed and configure these models directly into their websites. Leveraged Supabase for real-time database
+updates and streamlined content management.
         </li>
         {/* <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

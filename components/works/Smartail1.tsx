@@ -24,19 +24,32 @@ const Smartail1 = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Managed the admin login by completely restructuring the existing
-          components and building new ones.
+          Restructured and enhanced the admin portal, serving as the entry point for
+the application. This configuration setup manages 70+ schools and 65,000+ students, enabling schools to configure
+critical details such as classes, subjects, syllabi, and publications. Built new components and APIs using Angular
+(frontend) and Java Spring Boot (backend), ensuring seamless navigation and functionality for school
+administrators.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Seamlessly managed a major production release with main features in
-          the admin login and fixed 30+ bugs in 6 months across 10+ UI
-          components.
+          Worked on both frontend (Angular) and backend (Java Spring Boot,
+Python Flask) to implement new features, optimize performance, and resolve bugs. Delivered 10+ new UI
+components, enhancing user experience. Utilized Docker for containerization and Kafka for real-time data
+streaming, improving system reliability and scalability.
+        </li>
+        <li className="text-base flex gap-2 text-textDark">
+          <span className="text-textGreen mt-1">
+            <TiArrowForward />
+          </span>
+          Led a major production deployment, coordinating with the development team to
+    roll out new features, improve stability, and resolve critical issues. Successfully managed the release process,
+    ensuring a smooth transition to the live environment for all 70+ schools and their users.
         </li>
       </ul>
     </motion.div>
+    
   );
 };
 

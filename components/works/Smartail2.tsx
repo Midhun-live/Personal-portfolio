@@ -24,22 +24,26 @@ const Smartail2 = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Implemented an AI-powered image extraction mechanism, reducing image
+          Worked on a frontend image extraction mechanism for 2 types of questions: subjective
+and objective, streamlining the extraction process. Added MathLive Keyboard and KaTeX for rendering
+mathematical equations, enabling accurate extraction and display of math questions from images., reducing image
           processing and report generation time significantly.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Utilized advanced image processing techniques for accurate extraction
-          of questions from images, surpassing manual methods.
+          Designed and implemented various UI components and complete pages using
+Angular. Created and integrated multiple APIs with Java Spring Boot backend to ensure seamless data flow and
+functionality between the frontend and backend systems.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Developed various UI features and APIs for seamless integration and
-          streamlined data exchange, while also resolving bugs.
+          Identified and resolved 30+ UI and functionality-related bugs, improving the
+overall user experience. Optimized existing features for better performance and stability, ensuring a smooth and reliable
+application.
         </li>
       </ul>
     </motion.div>

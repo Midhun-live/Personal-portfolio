@@ -10,11 +10,11 @@ const Sayvai = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Software Developer{" "}
+        Full Stack Developer{" "}
         <span className="text-textGreen tracking-wide">@Sayvai Softwares</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Jun 2024 - Present{" "}
+        June 2024 - March 2025{" "}
       </p>
       <h4 className="ont-medium text-sm mt-2 font-titleFont">
         Tech Stack: Next.js, Supabase, FastAPI, Tailwind CSS, SQLAlchemy&apos;s Alembic, Livekit.

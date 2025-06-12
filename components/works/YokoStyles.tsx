@@ -11,7 +11,7 @@ const YokoStyles = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         Full Stack Developer Consultant{" "}
-        <span className="text-textGreen tracking-wide">@YokoStyles Remote</span>
+        <span className="text-textGreen tracking-wide">@YokoStyles</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
         April 2025 - Present{" "}

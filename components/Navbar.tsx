@@ -10,9 +10,10 @@ import { SiLeetcode } from "react-icons/si";
 
 interface props {
   sendEmail: any;
+  isScrolled?: boolean;
 }
 
-const Navbar = ({ sendEmail }: props) => {
+const Navbar = ({ sendEmail, isScrolled }: props) => {
   const email = "midhunchakkaravarthy07@gmail.com";
   const subject = encodeURIComponent("Inquiry from your portfolio");
   const body = encodeURIComponent("I saw your portfolio and would like to discuss potential opportunities. Looking forward to connecting!");
@@ -45,7 +46,7 @@ const Navbar = ({ sendEmail }: props) => {
   };
 
   return (
-    <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
+    <div className={`w-full shadow-navbarShadow sticky top-0 z-50 transition-all duration-500 ease-out will-change-transform ${isScrolled ? 'h-16 bg-bodyColor/95 backdrop-blur-xl border-b border-glassBorder' : 'h-20 lg:h-[12vh] bg-transparent'}`}>
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <motion.div
           initial={{ opacity: 0 }}
@@ -132,11 +133,13 @@ const Navbar = ({ sendEmail }: props) => {
           </ul>
           <a href="/assets/resume.pdf" target="_blank">
             <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen
-          hover:bg-hoverColor duration-300"
+              transition={{ delay: 0.5, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen/50
+          hover:bg-textGreen/10 hover:border-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)] transition-colors"
             >
               Resume
             </motion.button>
@@ -171,8 +174,8 @@ const Navbar = ({ sendEmail }: props) => {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.1 }}
-              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240]
-            flex flex-col items-center px-4 py-10 relative"
+              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-bodyColor/95 backdrop-blur-xl border-l border-glassBorder
+            flex flex-col items-center px-4 py-10 relative shadow-glass"
             >
               <MdOutlineClose
                 onClick={() => setShowMenu(false)}
@@ -278,6 +281,8 @@ const Navbar = ({ sendEmail }: props) => {
                 </ul>
                 <a  href="/assets/resume.pdf" target="_blank">
                   <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
@@ -285,7 +290,7 @@ const Navbar = ({ sendEmail }: props) => {
                       ease: "easeIn",
                     }}
                     className="w-32 h-10 rounded-md text-textGreen text-[13px] border
-                    border-textGreen hover:bg-hoverColor duration-300"
+                    border-textGreen/50 hover:bg-textGreen/10 hover:border-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)] transition-colors"
                   >
                     Resume
                   </motion.button>
@@ -299,9 +304,9 @@ const Navbar = ({ sendEmail }: props) => {
                     target="_blank"
                   >
                     <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px]
-                    border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full
-                    inline-flex items-center justify-center hover:text-textGreen
+                      className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px]
+                    border-glassBorder hover:border-textGreen text-zinc-200 rounded-full
+                    inline-flex items-center justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)]
                     cursor-pointer hover:-translate-y-2 transition-all duration-300"
                     >
                       <RiGithubLine />
@@ -315,9 +320,9 @@ const Navbar = ({ sendEmail }: props) => {
                     target="_blank"
                   >
                     <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px]
-                    border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full
-                    inline-flex items-center justify-center hover:text-textGreen
+                      className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px]
+                    border-glassBorder hover:border-textGreen text-zinc-200 rounded-full
+                    inline-flex items-center justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)]
                     cursor-pointer hover:-translate-y-2 transition-all duration-300"
                     >
                       <FaLinkedinIn />
@@ -331,9 +336,9 @@ const Navbar = ({ sendEmail }: props) => {
                     target="_blank"
                   >
                     <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px]
-                    border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full
-                    inline-flex items-center justify-center hover:text-textGreen
+                      className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px]
+                    border-glassBorder hover:border-textGreen text-zinc-200 rounded-full
+                    inline-flex items-center justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)]
                     cursor-pointer hover:-translate-y-2 transition-all duration-300"
                     >
                       <SiLeetcode />
@@ -347,9 +352,9 @@ const Navbar = ({ sendEmail }: props) => {
                     target="_blank"
                   >
                     <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px]
-                    border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full
-                    inline-flex items-center justify-center hover:text-textGreen
+                      className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px]
+                    border-glassBorder hover:border-textGreen text-zinc-200 rounded-full
+                    inline-flex items-center justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)]
                     cursor-pointer hover:-translate-y-2 transition-all duration-300"
                     >
                       <FaInstagram />

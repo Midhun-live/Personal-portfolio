@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { staggerContainer, fadeInUp, buttonVariants } from "../utils/motion";
+
 interface props {
   sendEmail: any;
 }
@@ -11,38 +13,33 @@ const Banner = ({ sendEmail }: props) => {
   // Mailto link with subject and body
   const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
   return (
-    <section
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      animate="show"
       id="home"
       className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4
   lgl:gap-8 mdl:px-10 xl:px-4"
     >
       <motion.h3
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
+        variants={fadeInUp}
         className="text-lg font-titleFont tracking-web text-textGreen"
       >
         Hi, I am
       </motion.h3>
       <motion.h1
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
+        variants={fadeInUp}
+        className="text-4xl lgl:text-7xl font-titleFont font-bold flex flex-col"
       >
-        Midhun Chakkaravarthy.{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-textLight to-textDark/80">Midhun Chakkaravarthy.</span>{" "}
         <motion.span
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-textDark mt-2 lgl:mt-4"
+          className="text-accent-gradient mt-2 lgl:mt-4"
         >
           Full Stack Developer
         </motion.span>
       </motion.h1>
       <motion.p
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        variants={fadeInUp}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
         As a full stack developer, tackling both backend challenges and
@@ -52,7 +49,7 @@ const Banner = ({ sendEmail }: props) => {
         music and eager to learn more instruments. My goal is to blend technical
         expertise with creativity while enjoying a simple and fulfilling life.
         <br />
-        <a href="/assets/resume.pdf" target="_black">
+        <a href="/assets/resume.pdf" target="_blank">
           <span
             className="text-textGreen inline-flex relative cursor-pointer h-7
           overflow-x-hidden group"
@@ -65,17 +62,18 @@ const Banner = ({ sendEmail }: props) => {
           </span>
         </a>
       </motion.p>
-      <a href={mailtoLink}><motion.button
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.9 }}
-        className="w-52 h-14 text-sm font-titleFont border border-textGreen
-      rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
-        // onClick={sendEmail}
-      >
-        Get in Touch
-      </motion.button></a>
-    </section>
+      <motion.a href={mailtoLink} variants={fadeInUp}>
+        <motion.button
+          variants={buttonVariants}
+          whileHover="hover"
+          whileTap="tap"
+          className="w-52 h-14 text-sm font-titleFont bg-textGreen/10 border border-textGreen
+      rounded-md text-textGreen tracking-wide hover:bg-textGreen hover:text-bodyColor shadow-[0_0_15px_rgba(100,255,218,0.2)] hover:shadow-[0_0_20px_rgba(100,255,218,0.5)] transition-colors duration-300"
+        >
+          Get in Touch
+        </motion.button>
+      </motion.a>
+    </motion.section>
   );
 };
 

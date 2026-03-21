@@ -10,9 +10,9 @@ const Footer = () => {
     >
       <a href="https://github.com/Midhun-live" target="_blank">
         <span
-          className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
+          className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px] border-glassBorder
         hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center
-        justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+        justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)] cursor-pointer hover:-translate-y-2
         transition-all duration-300"
         >
           <RiGithubLine />
@@ -23,9 +23,9 @@ const Footer = () => {
         target="_blank"
       >
         <span
-          className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
+          className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px] border-glassBorder
         hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center
-        justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+        justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)] cursor-pointer hover:-translate-y-2
         transition-all duration-300"
         >
           <FaLinkedinIn />
@@ -33,9 +33,9 @@ const Footer = () => {
       </a>
       <a href="https://leetcode.com/u/Midhun-Chakkaravarthy/" target="_blank">
         <span
-          className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
+          className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px] border-glassBorder
         hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center
-        justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+        justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)] cursor-pointer hover:-translate-y-2
         transition-all duration-300"
         >
           <SiLeetcode />
@@ -43,9 +43,9 @@ const Footer = () => {
       </a>
       <a href="https://www.instagram.com/_midhuu_/" target="_blank">
         <span
-          className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700
+          className="w-10 h-10 text-xl bg-glassBg backdrop-blur-md border-[1px] border-glassBorder
         hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center
-        justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2
+        justify-center hover:text-textGreen hover:shadow-[0_0_15px_rgba(100,255,218,0.3)] cursor-pointer hover:-translate-y-2
         transition-all duration-300"
         >
           <FaInstagram />

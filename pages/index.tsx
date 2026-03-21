@@ -18,11 +18,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(()=>{
     setTimeout(()=>{
       setLoading(false)
     },1500) 
-  })
+  }, [])
+
+  const handleScroll = (e: React.UIEvent<HTMLElement>) => {
+    setIsScrolled(e.currentTarget.scrollTop > 50);
+  };
   function sendEmail() {
     if (navigator.share) {
       navigator
@@ -57,11 +63,18 @@ export default function Home() {
             <title>Midhun Chakkaravarthy</title>
           </Head>
           <main
-            className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden 
-      overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60"
+            onScroll={handleScroll}
+            className="w-full h-screen font-bodyFont bg-transparent text-textLight overflow-x-hidden 
+      overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60 relative"
           >
-            <Navbar sendEmail={sendEmail} />
-            <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
+            <div className="fixed inset-0 bg-noise z-0 pointer-events-none"></div>
+            <Navbar sendEmail={sendEmail} isScrolled={isScrolled} />
+            <motion.div 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="w-full h-[88vh] xl:flex items-center gap-20 justify-between relative z-10"
+            >
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -87,7 +100,7 @@ export default function Home() {
               >
                 <RightSide sendEmail={sendEmail} />
               </motion.div>
-            </div>
+            </motion.div>
           </main>
           {/* <div className="fixed bottom-8 right-8 w-82 z-[99]">
             <ChatWidget />

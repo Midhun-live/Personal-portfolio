@@ -1,7 +1,8 @@
 import { FaRegFolder } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FaYoutube } from 'react-icons/fa';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 
 interface Props {
@@ -15,9 +16,11 @@ const ProjectCard = ({ title, content, techList, link }: Props) => {
   const router=useRouter();
   return (
     <a href={link} target="_blank">
-      <div
-        className="w-full h-80 shadow-projectShadow rounded-lg bg-[#112240] p-7 flex flex-col justify-between 
-      gap-6 hover:translate-y-2 transition-transform duration-300 group"
+      <motion.div
+        whileHover={{ y: -6, scale: 1.02 }}
+        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        className="w-full h-80 glass-card p-7 flex flex-col justify-between 
+      gap-6 shadow-glass group will-change-transform"
       >
         <div className="flex justify-between items-center">
           <FaRegFolder className="text-4xl text-textGreen" />
@@ -36,14 +39,14 @@ const ProjectCard = ({ title, content, techList, link }: Props) => {
           <p className="text-sm mt-3">{content}</p>
         </div>
         <ul
-          className="text-xs mdl:text-sm text-textDark group-hover:text-textGreen flex items-center gap-2
-      justify-between flex wrap"
+          className="text-xs mdl:text-sm text-textDark flex items-center gap-2
+      flex-wrap"
         >
           {techList.map((item, i) => (
-            <li key={i}>{item}</li>
+            <li key={i} className="bg-textGreen/10 border border-textGreen/20 text-textGreen px-2 py-1 rounded-full text-xs hover:bg-textGreen/20 transition-colors">{item}</li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </a>
   );
 };

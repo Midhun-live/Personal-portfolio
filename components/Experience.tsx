@@ -11,54 +11,55 @@ const Experience = () => {
       company: "Tata Elxsi",
       duration: "June 2025 - Present",
       points: [
-        "Currently part of the Transportation Business Unit (TBU), undergoing structured training on workflows and domain systems.",
-        "Gaining hands-on exposure to enterprise-grade systems and preparing for active project contributions."
+        "Currently part of the Transportation Business Unit (TBU), working with full stack architectures, focusing on scalable backend services, API design, and frontend integration."
       ],
-      skills: ["Enterprise Systems", "Domain Workflows"]
+      skills: []
     },
     {
       title: "Full Stack Developer",
       company: "YokoStyles",
       duration: "April 2025 - May 2025",
       points: [
-        "Built a parametric garment pattern export system using Python and Flask, supporting SVG, PNG, PDF, and DXF formats.",
-        "Developed a 3D visualization pipeline using Meshcapade API and NiceGUI for real-time garment rendering.",
-        "Refactored backend into microservices for pattern parsing, rendering, and export orchestration."
+        "Developed a Python/Flask–based parametric pattern export system converting GarmentCode patterns into SVG, PNG, PDF, and DXF with high-accuracy geometry preservation.",
+        "Built a 3D garment visualization pipeline using Meshcapade API and a NiceGUI interface for real-time pattern rendering and measurement-driven fit validation.",
+        "Refactored the pattern-processing backend into three Flask microservices for pattern parsing, format rendering, and export orchestration, improving modularity and deployment flexibility."
       ],
-      skills: ["Python", "Flask", "NiceGUI", "Microservices", "3D Visualization"]
+      skills: ["Python", "Flask", "NiceGUI", "Microservices", "Meshcapade API", "3D Visualization"]
     },
     {
       title: "Full Stack Developer",
       company: "Sayvai Software",
       duration: "June 2024 - May 2025",
       points: [
-        "Built a CMS platform using Next.js and FastAPI with dynamic page composition and modular UI blocks.",
-        "Developed AI-powered agent configuration systems with RAG pipelines and vector search.",
-        "Integrated LiveKit WebRTC for real-time audio communication.",
-        "Designed dashboards for managing voice and chat agents."
+        "Engineered a CMS platform using Next.js and FastAPI for external clients to create and manage website pages and embed configurable chat/voice agents. Developed 6+ modular components, including dynamic routing, component-driven UI blocks, and backend APIs for page composition and deployment.",
+        "Built administrative interfaces that allow non-technical users to configure agent behavior, memory settings, and deployment parameters. Integrated vector search, prompt templating, and RAG-style retrieval pipelines to support contextual and customizable agent responses.",
+        "Designed a configuration dashboard for creating and managing voice agents, implementing structured React UI flows and FastAPI endpoints to manage core settings such as STT, TTS, and LLM configuration.",
+        "Integrated LiveKit WebRTC to enable real-time audio streaming with low-latency, bi-directional communication. Implemented session handling and event workflows to support seamless client–agent interactions.",
+        "Developed multi-agent management features using Supabase, SQLAlchemy, and Alembic, enabling reliable configuration storage, structured schema updates, and real-time data synchronization across agent instances."
       ],
-      skills: ["Next.js", "FastAPI", "WebRTC", "AI Agents", "RAG"]
+      skills: ["Next.js", "React", "FastAPI", "Flask", "LiveKit", "WebRTC", "Supabase", "SQLAlchemy", "Alembic", "Vector Search", "RAG"]
     },
     {
       title: "Product Engineer Intern",
       company: "Smartail",
-      duration: "Dec 2023 - May 2024",
+      duration: "December 2023 - May 2024",
       points: [
-        "Redesigned admin platform used by 70+ schools and 65,000+ users.",
-        "Built multiple UI modules and backend APIs using Angular and Spring Boot.",
-        "Improved system stability and contributed to production deployment."
+        "Redesigned the admin portal for 70+ schools and 65,000+ students, implementing class, subject, syllabus, and publication modules using Angular and Spring Boot.",
+        "Built features and resolved major issues across the stack using Angular, Spring Boot, and Flask; delivered 10+ UI components with corresponding APIs and improved application stability.",
+        "Utilized Docker for consistent environments and Kafka for real-time data flows, enhancing system reliability.",
+        "Led a major production deployment by coordinating feature integration, stability improvements, and final QA validations. Managed the end-to-end release process, ensuring a smooth rollout for all 70+ schools and their users."
       ],
-      skills: ["Angular", "Spring Boot", "System Stability"]
+      skills: ["Angular", "Spring Boot", "Flask", "Docker", "Kafka"]
     },
     {
       title: "Product Engineer Intern",
       company: "Smartail",
-      duration: "June 2022 - Dec 2022",
+      duration: "June 2022 - December 2022",
       points: [
-        "Built image-based question extraction system with MathLive and KaTeX.",
-        "Developed UI pages and integrated backend APIs."
+        "Built an image-extraction workflow for subjective and objective questions, integrating MathLive Keyboard and KaTeX for accurate math rendering and extraction from images.",
+        "Developed multiple UI components and full pages using Angular, and integrated APIs with a Spring Boot backend to ensure consistent data flow and system functionality."
       ],
-      skills: ["MathLive", "KaTeX", "Backend APIs"]
+      skills: ["Angular", "Spring Boot", "MathLive", "KaTeX"]
     }
   ];
 

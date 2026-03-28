@@ -27,18 +27,15 @@ const About = () => {
         flex-col gap-4"
         >
           <p>
-            I am a skilled full-stack developer experienced in both frontend and backend technologies, 
-            focused on creating smooth and efficient web applications.
+            I am a full-stack developer passionate about creating smooth, efficient, and 
+            visually engaging web applications. I thrive on solving complex backend challenges 
+            and translating them into intuitive user interfaces that people love to use.
           </p>
           <p>
-            With a knack for problem-solving, I enjoy tackling challenging projects and continuously learning
-            new technologies. Beyond coding, I am an avid learner, always seeking opportunities to expand my skill set and contribute to exciting projects.
+            When I'm not at my desk coding, I enjoy exploring the outdoors, analyzing my next move 
+            in a game of chess, or exploring the world of music by learning new instruments like the flute.
           </p>
-          <p>
-            In my spare time, I love exploring the outdoors, playing chess, learning musical instruments, 
-            and working on personal coding projects.
-          </p>
-          <p>Here are a few technologies I’m currently working with and familiar with..</p>
+          <p>Here are the technologies I work with:</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 font-titleFont">
             <div className="glass-card p-4 hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] transition-shadow">
               <h6 className="text-md text-textLight font-semibold tracking-wide mb-3 flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /></span>Languages</h6>

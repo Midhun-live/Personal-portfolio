@@ -42,12 +42,7 @@ const Banner = ({ sendEmail }: props) => {
         variants={fadeInUp}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        As a full stack developer, tackling both backend challenges and
-        designing well-structured user interfaces brings great satisfaction.
-        <br />
-        When not coding, I’m a beginner flute player exploring the world of
-        music and eager to learn more instruments. My goal is to blend technical
-        expertise with creativity while enjoying a simple and fulfilling life.
+        I design and develop end-to-end applications — from backend architecture to intuitive user interfaces, powering scalable and AI-driven experiences.        <br />
         <br />
         <a href="/assets/resume.pdf" target="_blank">
           <span

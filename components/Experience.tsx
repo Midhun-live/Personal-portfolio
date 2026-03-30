@@ -11,9 +11,11 @@ const Experience = () => {
       company: "Tata Elxsi",
       duration: "June 2025 - Present",
       points: [
-        "Currently part of the Transportation Business Unit (TBU), working with full stack architectures, focusing on scalable backend services, API design, and frontend integration."
+        "Developed the content catalog & metadata service, designing REST APIs for ingestion, normalization, and retrieval of content feeds; structured service to support multi-device playback workflows and dynamic content discovery.",
+        "Implemented an ad insertion pipeline, integrating VAST/VMAP-based ad workflows with backend services to enable server-side and client-side ad delivery, ensuring seamless playback and monetization across OTT streams.",
+        "Built a user analytics & personalization service, capturing playback/session events and enabling recommendation logic using LLM/RAG concepts, and exposing APIs for real-time personalized content delivery."
       ],
-      skills: []
+      skills: ["Node.js", "Express.js", "Kafka", "REST APIs", "Microservices"]
     },
     {
       title: "Full Stack Developer",
@@ -34,10 +36,9 @@ const Experience = () => {
         "Engineered a CMS platform using Next.js and FastAPI for external clients to create and manage website pages and embed configurable chat/voice agents. Developed 6+ modular components, including dynamic routing, component-driven UI blocks, and backend APIs for page composition and deployment.",
         "Built administrative interfaces that allow non-technical users to configure agent behavior, memory settings, and deployment parameters. Integrated vector search, prompt templating, and RAG-style retrieval pipelines to support contextual and customizable agent responses.",
         "Designed a configuration dashboard for creating and managing voice agents, implementing structured React UI flows and FastAPI endpoints to manage core settings such as STT, TTS, and LLM configuration.",
-        "Integrated LiveKit WebRTC to enable real-time audio streaming with low-latency, bi-directional communication. Implemented session handling and event workflows to support seamless client–agent interactions.",
         "Developed multi-agent management features using Supabase, SQLAlchemy, and Alembic, enabling reliable configuration storage, structured schema updates, and real-time data synchronization across agent instances."
       ],
-      skills: ["Next.js", "React", "FastAPI", "Flask", "LiveKit", "WebRTC", "Supabase", "SQLAlchemy", "Alembic", "Vector Search", "RAG"]
+      skills: ["Next.js", "React", "FastAPI", "Flask", "WebRTC", "Supabase", "SQLAlchemy", "Alembic", "Vector Search", "RAG"]
     },
     {
       title: "Product Engineer Intern",
@@ -64,25 +65,25 @@ const Experience = () => {
   ];
 
   return (
-    <motion.section 
+    <motion.section
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}
-      id="experience" 
+      id="experience"
       className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
     >
       <motion.div variants={fadeInUp}><SectionTitle title="Experiences" titleNumber="02" /></motion.div>
       <div className="w-full mt-10 flex flex-col gap-10 relative">
         {/* Timeline Line */}
-        <motion.div 
+        <motion.div
           initial={{ scaleY: 0 }}
           whileInView={{ scaleY: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "linear" }}
           className="absolute w-[2px] h-full bg-textGreen/20 left-[19px] md:left-[11px] top-0 origin-top"
         ></motion.div>
-        
+
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -91,7 +92,7 @@ const Experience = () => {
           >
             {/* Timeline Dot */}
             <div className="absolute left-[11px] md:left-[3px] top-1.5 w-5 h-5 bg-bodyColor border-2 border-textGreen rounded-full group-hover:bg-textGreen group-hover:shadow-[0_0_10px_rgba(100,255,218,0.5)] transition-all duration-300"></div>
-            
+
             {/* Content Card */}
             <div className="w-full glass-card p-6 md:p-8 hover:shadow-[0_0_20px_rgba(100,255,218,0.15)] transition-shadow duration-300">
               <h3 className="flex flex-col md:flex-row md:items-center gap-2 text-xl font-titleFont font-bold text-textLight">
@@ -102,7 +103,7 @@ const Experience = () => {
               <p className="text-sm text-textDark font-medium mt-1 tracking-wide">
                 {exp.duration}
               </p>
-              
+
               <ul className="mt-4 flex flex-col gap-3">
                 {exp.points.map((point, i) => (
                   <li key={i} className="text-base flex gap-2 text-textDark">
@@ -111,7 +112,7 @@ const Experience = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="flex gap-2 flex-wrap mt-6">
                 {exp.skills.map((skill, i) => (
                   <span key={i} className="bg-textGreen/10 border border-textGreen/20 text-textGreen text-xs px-3 py-1 rounded-full">

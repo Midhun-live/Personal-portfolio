@@ -14,7 +14,7 @@ const ChatWidget = () => {
   const [openAIKey, setOpenAIkey] = useState("");
   const [model, setModel] = useState<ChatOpenAI | null>(null);
   const [chain, setChain] = useState<ConversationChain | null>(null);
-  const memory = new BufferMemory();
+  const [memory] = useState(() => new BufferMemory());
 
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: string; content: string }[]>(
@@ -46,7 +46,7 @@ const ChatWidget = () => {
       setModel(newModel);
       setChain(newChain);
     }
-  }, [openAIKey]);
+  }, [openAIKey, memory]);
 
   
   useEffect(() => {

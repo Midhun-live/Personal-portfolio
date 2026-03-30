@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import { staggerContainer, fadeInUp } from "../utils/motion";
 
 const About = () => {
-  const languages=["C", "Java", "Python", "JavaScript", "TypeScript", "SQL"];
-  const frameworks=["Angular", "React", "Next.js", "Node.js", "Express", "Spring Boot", "Tailwind CSS"];
-  const databases=["PostgreSQL", "MySQL", "Supabase"];
-  const tools=["Git", "SQLAlchemy", "Alembic", "Docker", "Livekit", "Kafka"]
+  const languages = ["C", "Java", "Python", "JavaScript", "TypeScript", "SQL"];
+  const frameworks = ["Angular", "React", "Next.js", "Node.js", "Express", "Spring Boot", "Tailwind CSS"];
+  const databases = ["PostgreSQL", "MySQL", "Supabase"];
+  const tools = ["Git", "SQLAlchemy", "Alembic", "Docker", "Livekit", "Kafka"]
   return (
     <motion.section
       variants={staggerContainer}
@@ -27,12 +27,12 @@ const About = () => {
         flex-col gap-4"
         >
           <p>
-            I am a full-stack developer passionate about creating smooth, efficient, and 
-            visually engaging web applications. I thrive on solving complex backend challenges 
+            I am a full-stack developer passionate about creating smooth, efficient, and
+            visually engaging web applications. I thrive on solving complex backend challenges
             and translating them into intuitive user interfaces that people love to use.
           </p>
           <p>
-            When I'm not at my desk coding, I enjoy exploring the outdoors, analyzing my next move 
+            When I&apos;m not at my desk coding, I enjoy exploring the outdoors, analyzing my next move
             in a game of chess, or exploring the world of music by learning new instruments like the flute.
           </p>
           <p>Here are the technologies I work with:</p>

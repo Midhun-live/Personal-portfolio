@@ -35,7 +35,7 @@ const Banner = ({ sendEmail }: props) => {
         <motion.span
           className="text-accent-gradient mt-2 lgl:mt-4"
         >
-          Full Stack Developer
+          Full Stack AI Developer
         </motion.span>
       </motion.h1>
       <motion.p

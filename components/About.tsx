@@ -86,7 +86,7 @@ const About = () => {
               Midhun Chakkaravarthy K
             </h3>
             <p className="text-xs text-textGreen font-semibold tracking-widest text-center uppercase mt-1">
-              Full Stack Developer
+              Full Stack AI Developer
             </p>
             <p className="text-xs text-center text-textDark mt-3 italic font-medium px-2">
               Coimbatore Institute of Technology Alumni
@@ -114,13 +114,14 @@ const About = () => {
             </h4>
             <div className="text-sm text-textDark space-y-2 leading-relaxed font-medium">
               <p>
-                I am a full-stack developer passionate about creating smooth, efficient, and
-                visually engaging web applications. I thrive on solving complex backend challenges
-                and translating them into intuitive user interfaces that people love to use.
+                I am a Full Stack AI Developer passionate about creating smooth, efficient, and
+                visually engaging applications powered by intelligent systems. I thrive on architecting
+                voice AI agents, integrating LLMs/RAG workflows, solving complex backend challenges,
+                and translating them into intuitive user interfaces.
               </p>
               <p>
-                When I&apos;m not at my desk coding, I enjoy exploring the outdoors, analyzing my next move
-                in a game of chess, or learning new instruments like the flute.
+                When I&apos;m not building AI solutions or coding at my desk, I enjoy exploring the outdoors,
+                analyzing my next move in a game of chess, or learning new instruments like the flute.
               </p>
             </div>
           </div>

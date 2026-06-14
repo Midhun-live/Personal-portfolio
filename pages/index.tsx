@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Archives from "@/components/Archives";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
@@ -87,8 +85,6 @@ export default function Home() {
                 <Banner sendEmail={sendEmail} />
                 <About />
                 <Experience />
-                {/* <Projects /> */}
-                <Archives />
                 <Contact sendEmail={sendEmail} />
                 <Footer />
               </div>

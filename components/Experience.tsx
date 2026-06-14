@@ -11,50 +11,41 @@ const Experience = () => {
       company: "Tata Elxsi",
       duration: "June 2025 - Present",
       points: [
-        "Developed the content catalog & metadata service, designing REST APIs for ingestion, normalization, and retrieval of content feeds; structured service to support multi-device playback workflows and dynamic content discovery.",
-        "Implemented an ad insertion pipeline, integrating VAST/VMAP-based ad workflows with backend services to enable server-side and client-side ad delivery, ensuring seamless playback and monetization across OTT streams.",
-        "Built a user analytics & personalization service, capturing playback/session events and enabling recommendation logic using LLM/RAG concepts, and exposing APIs for real-time personalized content delivery."
+        "Own Content Catalog and Metadata Services built with Node.js, Express.js, REST APIs, and Microsoft SQL, enabling ingestion, normalization, and retrieval of thousands of content assets across multi-device OTT platforms.",
+        "Integrate VAST/VMAP-based AdTech Workflows with backend services to support server-side and client-side ad delivery, content monetization, and seamless playback experiences.",
+        "Drive User Analytics and Personalization Services, processing thousands of playback and session events to power real-time analytics, content recommendations, and audience engagement insights.",
+        "Maintain and enhance the beIN Sports Editorial Content Platform across Web, Android, and iOS, supporting multilingual content delivery in 4 languages across multiple global regions.",
+        "Contribute scalable backend features using Node.js, Express.js, Microsoft SQL, REST APIs, and Microservices Architecture, ensuring reliable content delivery during high-traffic sporting events."
       ],
-      skills: ["Node.js", "Express.js", "Kafka", "REST APIs", "Microservices"]
-    },
-    {
-      title: "Full Stack Developer",
-      company: "YokoStyles",
-      duration: "April 2025 - May 2025",
-      points: [
-        "Developed a Python/Flask–based parametric pattern export system converting GarmentCode patterns into SVG, PNG, PDF, and DXF with high-accuracy geometry preservation.",
-        "Built a 3D garment visualization pipeline using Meshcapade API and a NiceGUI interface for real-time pattern rendering and measurement-driven fit validation.",
-        "Refactored the pattern-processing backend into three Flask microservices for pattern parsing, format rendering, and export orchestration, improving modularity and deployment flexibility."
-      ],
-      skills: ["Python", "Flask", "NiceGUI", "Microservices", "Meshcapade API", "3D Visualization"]
+      skills: ["Node.js", "Express.js", "Microsoft SQL", "REST APIs", "Microservices"]
     },
     {
       title: "Full Stack Developer",
       company: "Sayvai Software",
       duration: "June 2024 - May 2025",
       points: [
-        "Engineered a CMS platform using Next.js and FastAPI for external clients to create and manage website pages and embed configurable chat/voice agents. Developed 6+ modular components, including dynamic routing, component-driven UI blocks, and backend APIs for page composition and deployment.",
-        "Built administrative interfaces that allow non-technical users to configure agent behavior, memory settings, and deployment parameters. Integrated vector search, prompt templating, and RAG-style retrieval pipelines to support contextual and customizable agent responses.",
-        "Designed a configuration dashboard for creating and managing voice agents, implementing structured React UI flows and FastAPI endpoints to manage core settings such as STT, TTS, and LLM configuration.",
-        "Developed multi-agent management features using Supabase, SQLAlchemy, and Alembic, enabling reliable configuration storage, structured schema updates, and real-time data synchronization across agent instances."
+        "Architected a Voice AI Agent Management Platform using Next.js, React, FastAPI, PostgreSQL, STT, TTS, and LLMs, enabling centralized creation and deployment of conversational voice agents.",
+        "Designed Multi-Agent Administration Dashboards supporting lifecycle management, deployment configuration, monitoring, and management of multiple AI agents through a unified interface.",
+        "Created a CMS and Website Builder Platform using Next.js, FastAPI, Dynamic Routing, and Reusable Components, delivering 6+ reusable modules for page composition and configurable chat and voice integrations.",
+        "Developed a Python/Flask-based Parametric Pattern Processing System converting GarmentCode patterns into SVG, PNG, PDF, and DXF formats while preserving production-grade geometric accuracy.",
+        "Established a 3D Garment Visualization Platform using Meshcapade API and adopted Microservices Architecture with Flask, Supabase, SQLAlchemy, and Alembic to support scalable rendering and fit-validation workflows."
       ],
-      skills: ["Next.js", "React", "FastAPI", "Flask", "WebRTC", "Supabase", "SQLAlchemy", "Alembic", "Vector Search", "RAG"]
+      skills: ["Next.js", "React", "FastAPI", "Python", "Flask", "Meshcapade API", "Microservices"]
     },
     {
       title: "Product Engineer Intern",
-      company: "Smartail",
+      company: "Smartail Private Limited",
       duration: "December 2023 - May 2024",
       points: [
         "Redesigned the admin portal for 70+ schools and 65,000+ students, implementing class, subject, syllabus, and publication modules using Angular and Spring Boot.",
         "Built features and resolved major issues across the stack using Angular, Spring Boot, and Flask; delivered 10+ UI components with corresponding APIs and improved application stability.",
-        "Utilized Docker for consistent environments and Kafka for real-time data flows, enhancing system reliability.",
-        "Led a major production deployment by coordinating feature integration, stability improvements, and final QA validations. Managed the end-to-end release process, ensuring a smooth rollout for all 70+ schools and their users."
+        "Utilized Docker for consistent environments and Kafka for real-time data flows, enhancing system reliability."
       ],
       skills: ["Angular", "Spring Boot", "Flask", "Docker", "Kafka"]
     },
     {
       title: "Product Engineer Intern",
-      company: "Smartail",
+      company: "Smartail Private Limited",
       duration: "June 2022 - December 2022",
       points: [
         "Built an image-extraction workflow for subjective and objective questions, integrating MathLive Keyboard and KaTeX for accurate math rendering and extraction from images.",

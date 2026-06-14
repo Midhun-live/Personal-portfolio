@@ -101,7 +101,7 @@ const Navbar = ({ sendEmail, isScrolled }: props) => {
               </motion.li>
             </Link>
             <Link
-              href="#project"
+              href="#contact"
               onClick={handleScroll}
               className="flex items-center gap-1 font-medium text-textDark 
               hover:text-textGreen cursor-pointer duration-300 nav-link"
@@ -112,21 +112,6 @@ const Navbar = ({ sendEmail, isScrolled }: props) => {
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
                 <span className="text-textGreen">03.</span>
-                Projects
-              </motion.li>
-            </Link>
-            <Link
-              href="#contact"
-              onClick={handleScroll}
-              className="flex items-center gap-1 font-medium text-textDark 
-              hover:text-textGreen cursor-pointer duration-300 nav-link"
-            >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.4 }}
-              >
-                <span className="text-textGreen">04.</span>
                 Contact
               </motion.li>
             </Link>
@@ -241,7 +226,7 @@ const Navbar = ({ sendEmail, isScrolled }: props) => {
                     </motion.li>
                   </Link>
                   <Link
-                    href="#project"
+                    href="#contact"
                     onClick={handleScroll}
                     className="flex items-center gap-1 font-medium text-textDark 
               hover:text-textGreen cursor-pointer duration-300 nav-link"
@@ -256,25 +241,6 @@ const Navbar = ({ sendEmail, isScrolled }: props) => {
                       }}
                     >
                       <span className="text-textGreen">03.</span>
-                      Projects
-                    </motion.li>
-                  </Link>
-                  <Link
-                    href="#contact"
-                    onClick={handleScroll}
-                    className="flex items-center gap-1 font-medium text-textDark 
-              hover:text-textGreen cursor-pointer duration-300 nav-link"
-                  >
-                    <motion.li
-                      initial={{ x: 20, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{
-                        duration: 0.2,
-                        delay: 0.5,
-                        ease: "easeIn",
-                      }}
-                    >
-                      <span className="text-textGreen">04.</span>
                       Contact
                     </motion.li>
                   </Link>

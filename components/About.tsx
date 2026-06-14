@@ -1,4 +1,5 @@
 import { AiFillThunderbolt } from "react-icons/ai";
+import { FaCode, FaLaptopCode, FaDatabase, FaTools, FaCubes } from "react-icons/fa";
 import SectionTtile from "./SectionTitle";
 import Image from "next/image";
 import { profile } from "@/public/assets";
@@ -7,9 +8,51 @@ import { staggerContainer, fadeInUp } from "../utils/motion";
 
 const About = () => {
   const languages = ["C", "Java", "Python", "JavaScript", "TypeScript", "SQL"];
-  const frameworks = ["Angular", "React", "Next.js", "Node.js", "Express", "Spring Boot", "Tailwind CSS"];
-  const databases = ["PostgreSQL", "MySQL", "Supabase"];
-  const tools = ["Git", "SQLAlchemy", "Alembic", "Docker", "Livekit", "Kafka"]
+  const frameworks = [
+    "Angular",
+    "React",
+    "React Hooks",
+    "Redux",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "FastAPI",
+    "Flask",
+    "Spring Boot",
+    "Tailwind CSS",
+    "LangChain",
+    "SQLAlchemy",
+    "Alembic"
+  ];
+  const databases = [
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Microsoft SQL Server",
+    "Supabase",
+    "Vector Databases"
+  ];
+  const tools = [
+    "AWS",
+    "Azure",
+    "Azure DevOps",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "Kafka",
+    "Postman",
+    "WebSockets",
+    "CI/CD"
+  ];
+  const core = [
+    "MERN Stack",
+    "REST API Design",
+    "Microservices Architecture",
+    "Distributed Systems",
+    "Event-Driven Architecture",
+    "System Design"
+  ];
+
   return (
     <motion.section
       variants={staggerContainer}
@@ -17,69 +60,158 @@ const About = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}
       id="about"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
+      className="max-w-containerSmall mx-auto py-10 lgl:py-24 px-4"
     >
-      <motion.div variants={fadeInUp}><SectionTtile title="About Me" titleNumber="01" /></motion.div>
-      <div className="flex flex-col lgl:flex-row gap-16">
+      <motion.div variants={fadeInUp}>
+        <SectionTtile title="About Me" titleNumber="01" />
+      </motion.div>
+
+      <div className="grid grid-cols-1 lgl:grid-cols-12 gap-6 mt-10">
+        {/* Profile and Bio Card */}
         <motion.div
           variants={fadeInUp}
-          className="w-full lgl:w-2/3 text-base text-textDark font-medium flex
-        flex-col gap-4"
+          className="col-span-1 lgl:col-span-4 flex flex-col justify-between glass-card p-6 border border-glassBorder hover:border-textGreen/20 hover:shadow-[0_0_25px_rgba(100,255,218,0.15)] transition-all duration-300 group"
         >
-          <p>
-            I am a full-stack developer passionate about creating smooth, efficient, and
-            visually engaging web applications. I thrive on solving complex backend challenges
-            and translating them into intuitive user interfaces that people love to use.
-          </p>
-          <p>
-            When I&apos;m not at my desk coding, I enjoy exploring the outdoors, analyzing my next move
-            in a game of chess, or exploring the world of music by learning new instruments like the flute.
-          </p>
-          <p>Here are the technologies I work with:</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 font-titleFont">
-            <div className="glass-card p-4 hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] transition-shadow">
-              <h6 className="text-md text-textLight font-semibold tracking-wide mb-3 flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /></span>Languages</h6>
-              <div className="flex flex-wrap gap-2">
-                {languages.map((item, i) => (
-                  <span key={i} className="bg-textGreen/10 text-textGreen border border-textGreen/20 px-3 py-1 rounded-full text-xs hover:bg-textGreen/20 transition-colors cursor-default">{item}</span>
-                ))}
+          <div>
+            <div className="relative w-32 h-32 mx-auto rounded-full p-[3px] bg-gradient-to-tr from-textGreen via-emerald-500 to-cyan-500 shadow-[0_0_20px_rgba(100,255,218,0.2)] group-hover:scale-105 transition-transform duration-300">
+              <div className="w-full h-full relative rounded-full overflow-hidden bg-bodyColor">
+                <Image
+                  className="w-full h-full object-cover"
+                  src={profile}
+                  alt="profileImg"
+                />
               </div>
             </div>
-            <div className="glass-card p-4 hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] transition-shadow">
-              <h6 className="text-md text-textLight font-semibold tracking-wide mb-3 flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /></span>Frameworks</h6>
-              <div className="flex flex-wrap gap-2">
-                {frameworks.map((item, i) => (
-                  <span key={i} className="bg-textGreen/10 text-textGreen border border-textGreen/20 px-3 py-1 rounded-full text-xs hover:bg-textGreen/20 transition-colors cursor-default">{item}</span>
-                ))}
-              </div>
-            </div>
-            <div className="glass-card p-4 hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] transition-shadow">
-              <h6 className="text-md text-textLight font-semibold tracking-wide mb-3 flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /></span>Databases</h6>
-              <div className="flex flex-wrap gap-2">
-                {databases.map((item, i) => (
-                  <span key={i} className="bg-textGreen/10 text-textGreen border border-textGreen/20 px-3 py-1 rounded-full text-xs hover:bg-textGreen/20 transition-colors cursor-default">{item}</span>
-                ))}
-              </div>
-            </div>
-            <div className="glass-card p-4 hover:shadow-[0_0_15px_rgba(100,255,218,0.15)] transition-shadow">
-              <h6 className="text-md text-textLight font-semibold tracking-wide mb-3 flex items-center gap-2"><span className="text-textGreen"><AiFillThunderbolt /></span>Tools</h6>
-              <div className="flex flex-wrap gap-2">
-                {tools.map((item, i) => (
-                  <span key={i} className="bg-textGreen/10 text-textGreen border border-textGreen/20 px-3 py-1 rounded-full text-xs hover:bg-textGreen/20 transition-colors cursor-default">{item}</span>
-                ))}
-              </div>
+            <h3 className="text-xl font-bold text-center mt-5 text-textLight font-titleFont">
+              Midhun Chakkaravarthy K
+            </h3>
+            <p className="text-xs text-textGreen font-semibold tracking-widest text-center uppercase mt-1">
+              Full Stack Developer
+            </p>
+            <p className="text-xs text-center text-textDark mt-3 italic font-medium px-2">
+              Coimbatore Institute of Technology Alumni
+            </p>
+          </div>
+
+          <div className="mt-6 pt-6 border-t border-glassBorder text-center">
+            <div>
+              <p className="text-2xl font-bold text-textGreen">3+</p>
+              <p className="text-[10px] text-textDark uppercase tracking-wider font-bold">Years Exp.</p>
             </div>
           </div>
         </motion.div>
-        <motion.div variants={fadeInUp} className="w-full lg:w-1/3 relative group mt-10 lg:mt-0">
-          <div className="w-full aspect-square rounded-2xl bg-white/5 p-4 border border-white/10 hover:border-textGreen/30 transition-colors duration-500">
-            <div className="w-full h-full relative rounded-xl overflow-hidden bg-white mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-500 shadow-xl">
-              <Image
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                src={profile}
-                alt="profileImg"
-                fill
-              />
+
+        {/* Right Bento Grid Section */}
+        <motion.div
+          variants={fadeInUp}
+          className="col-span-1 lgl:col-span-8 grid grid-cols-1 sm:grid-cols-6 gap-4"
+        >
+          {/* Who I Am Card */}
+          <div className="sm:col-span-6 glass-card p-5 border border-glassBorder hover:border-textGreen/20 hover:shadow-[0_0_15px_rgba(100,255,218,0.1)] transition-all duration-300">
+            <h4 className="text-sm text-textLight font-bold mb-3 flex items-center gap-2 uppercase tracking-wider">
+              <span className="text-textGreen text-base"><AiFillThunderbolt /></span>
+              Who I Am
+            </h4>
+            <div className="text-sm text-textDark space-y-2 leading-relaxed font-medium">
+              <p>
+                I am a full-stack developer passionate about creating smooth, efficient, and
+                visually engaging web applications. I thrive on solving complex backend challenges
+                and translating them into intuitive user interfaces that people love to use.
+              </p>
+              <p>
+                When I&apos;m not at my desk coding, I enjoy exploring the outdoors, analyzing my next move
+                in a game of chess, or learning new instruments like the flute.
+              </p>
+            </div>
+          </div>
+
+          {/* Frameworks & Libraries (Wide Card) */}
+          <div className="sm:col-span-6 glass-card p-5 border border-glassBorder hover:border-[#2dd4bf]/20 hover:shadow-[0_0_15px_rgba(45,212,191,0.1)] transition-all duration-300">
+            <h4 className="text-sm text-textLight font-bold mb-3 flex items-center gap-2 uppercase tracking-wider">
+              <span className="text-[#2dd4bf] text-base"><FaLaptopCode /></span>
+              Frameworks & Libraries
+            </h4>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {frameworks.map((item, i) => (
+                <span
+                  key={i}
+                  className="bg-[#2dd4bf]/5 text-[#2dd4bf] border border-[#2dd4bf]/15 px-2.5 py-1 rounded text-xs hover:bg-[#2dd4bf]/15 hover:scale-105 transition-all duration-200 cursor-default"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Languages */}
+          <div className="sm:col-span-3 glass-card p-5 border border-glassBorder hover:border-[#22d3ee]/20 hover:shadow-[0_0_15px_rgba(34,211,238,0.1)] transition-all duration-300">
+            <h4 className="text-sm text-textLight font-bold mb-3 flex items-center gap-2 uppercase tracking-wider">
+              <span className="text-[#22d3ee] text-base"><FaCode /></span>
+              Languages
+            </h4>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {languages.map((item, i) => (
+                <span
+                  key={i}
+                  className="bg-[#22d3ee]/5 text-[#22d3ee] border border-[#22d3ee]/15 px-2.5 py-1 rounded text-xs hover:bg-[#22d3ee]/15 hover:scale-105 transition-all duration-200 cursor-default"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Databases */}
+          <div className="sm:col-span-3 glass-card p-5 border border-glassBorder hover:border-[#818cf8]/20 hover:shadow-[0_0_15px_rgba(129,140,248,0.1)] transition-all duration-300">
+            <h4 className="text-sm text-textLight font-bold mb-3 flex items-center gap-2 uppercase tracking-wider">
+              <span className="text-[#818cf8] text-base"><FaDatabase /></span>
+              Databases
+            </h4>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {databases.map((item, i) => (
+                <span
+                  key={i}
+                  className="bg-[#818cf8]/5 text-[#818cf8] border border-[#818cf8]/15 px-2.5 py-1 rounded text-xs hover:bg-[#818cf8]/15 hover:scale-105 transition-all duration-200 cursor-default"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Tools */}
+          <div className="sm:col-span-3 glass-card p-5 border border-glassBorder hover:border-[#f472b6]/20 hover:shadow-[0_0_15px_rgba(244,114,182,0.1)] transition-all duration-300">
+            <h4 className="text-sm text-textLight font-bold mb-3 flex items-center gap-2 uppercase tracking-wider">
+              <span className="text-[#f472b6] text-base"><FaTools /></span>
+              Tools
+            </h4>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {tools.map((item, i) => (
+                <span
+                  key={i}
+                  className="bg-[#f472b6]/5 text-[#f472b6] border border-[#f472b6]/15 px-2.5 py-1 rounded text-xs hover:bg-[#f472b6]/15 hover:scale-105 transition-all duration-200 cursor-default"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Core */}
+          <div className="sm:col-span-3 glass-card p-5 border border-glassBorder hover:border-[#fb923c]/20 hover:shadow-[0_0_15px_rgba(251,146,60,0.1)] transition-all duration-300">
+            <h4 className="text-sm text-textLight font-bold mb-3 flex items-center gap-2 uppercase tracking-wider">
+              <span className="text-[#fb923c] text-base"><FaCubes /></span>
+              Core
+            </h4>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {core.map((item, i) => (
+                <span
+                  key={i}
+                  className="bg-[#fb923c]/5 text-[#fb923c] border border-[#fb923c]/15 px-2.5 py-1 rounded text-xs hover:bg-[#fb923c]/15 hover:scale-105 transition-all duration-200 cursor-default"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </motion.div>

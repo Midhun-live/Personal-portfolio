@@ -29,12 +29,12 @@ const Contact = ({ sendEmail }: props) => {
         className="font-titleFont text-lg text-textGreen font-semibold flex
         items-center tracking-wide"
       >
-        04. What&apos;s Next?
+        03. What&apos;s Next?
       </motion.p>
       <motion.h2 variants={fadeInUp} className="font-titleFont text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-textLight to-textDark">Get In Touch</motion.h2>
       <motion.p variants={fadeInUp} className="max-w-[600px] text-center  text-textDark">
         I am open to new opportunities and would be glad to hear back from you.
-        Be it a question or just wanting to say hello, feel free to reach out to me and 
+        Be it a question or just wanting to say hello, feel free to reach out to me and
         I will do my very best to get back to you!
       </motion.p>
       <motion.a href={mailtoLink} variants={fadeInUp}>

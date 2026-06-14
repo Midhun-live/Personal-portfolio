@@ -1,6 +1,6 @@
 import { AiFillThunderbolt } from "react-icons/ai";
 import { FaCode, FaLaptopCode, FaDatabase, FaTools, FaCubes } from "react-icons/fa";
-import SectionTtile from "./SectionTitle";
+import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 import { profile } from "@/public/assets";
 import { motion } from "framer-motion";
@@ -63,7 +63,7 @@ const About = () => {
       className="max-w-containerSmall mx-auto py-10 lgl:py-24 px-4"
     >
       <motion.div variants={fadeInUp}>
-        <SectionTtile title="About Me" titleNumber="01" />
+        <SectionTitle title="About Me" titleNumber="01" />
       </motion.div>
 
       <div className="grid grid-cols-1 lgl:grid-cols-12 gap-6 mt-10">

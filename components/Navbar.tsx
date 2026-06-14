@@ -133,7 +133,7 @@ const Navbar = ({ sendEmail, isScrolled }: props) => {
         <div
           onClick={() => setShowMenu(true)}
           className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden
-        text-4xl text-textFreen cursor-pointer overflow-hidden group"
+        text-4xl text-textGreen cursor-pointer overflow-hidden group"
         >
           <span
             className="w-full h-[2px] bg-textGreen inline-flex transform 

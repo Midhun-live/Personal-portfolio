@@ -3,7 +3,7 @@ interface props {
   titleNumber: string;
 }
 
-const SectionTtile = ({ title, titleNumber }: props) => {
+const SectionTitle = ({ title, titleNumber }: props) => {
   return (
     <h2 className="font-titleFont text-2xl font-semibold flex items-center">
       <span className="text-base md:text-lg text-textGreen mr-2">
@@ -15,4 +15,4 @@ const SectionTtile = ({ title, titleNumber }: props) => {
   );
 };
 
-export default SectionTtile;
+export default SectionTitle;
